@@ -1,0 +1,167 @@
+.button-blue-round {
+  padding:20px;
+  border-radius:20px;
+  background: #0f69d1;
+}
+.button-red-round {
+  padding:20px;
+  border-radius:20px;
+  background: #a80d0d;
+}
+.button-round {
+  padding:20px;
+  border-radius:20px;
+}
+.circle-tiny {
+  border-radius:100px;
+  width:10px;
+  height:10px;
+}
+.circle-small {
+  border-radius:100px;
+  width:50px;
+  height:50px;
+}
+.circle-medium {
+  border-radius:100px;
+  width:100px;
+  height:100px;
+}
+.circle-big {
+  border-radius:100px;
+  width:350px;
+  height:350px;
+}
+.circle-large {
+  border-radius:100px;
+  width:500px;
+  height:500px;
+}
+.square-tiny {
+  width:10px;
+  height:10px;
+}
+.square-small {
+  width:50px;
+  height:50px;
+}
+.square-medium {
+  width:100px;
+  height:100px;
+}
+.square-big {
+  width:350px;
+  height:350px;
+}
+.square-large {
+  width:500px;
+  height:500px;
+}
+.rotate10deg:hover {
+  transform: rotate(10deg)
+}
+.rotate20deg:hover {
+  transform: rotate(20deg)
+}
+.rotate30deg:hover {
+  transform: rotate(30deg)
+}
+.rotate40deg:hover {
+  transform: rotate(40deg)
+}
+.rotate50deg:hover {
+  transform: rotate(50deg)
+}
+.rotate60deg:hover {
+  transform: rotate(60deg)
+}
+.rotate70deg:hover {
+  transform: rotate(70deg)
+}
+.rotate80deg:hover {
+  transform: rotate(80deg)
+}
+.rotate90deg:hover {
+  transform: rotate(90deg)
+}
+.rotate100deg:hover {
+  transform: rotate(100deg)
+}
+.rotate110deg:hover {
+  transform: rotate(110deg)
+}
+.rotate120deg:hover {
+  transform: rotate(120deg)
+}
+.rotate130deg:hover {
+  transform: rotate(130deg)
+}
+.rotate140deg:hover {
+  transform: rotate(140deg)
+}
+.rotate150deg:hover {
+  transform: rotate(150deg)
+}
+.rotate160deg:hover {
+  transform: rotate(160deg)
+}
+.rotate170deg:hover {
+  transform: rotate(170deg)
+}
+.rotate180deg:hover {
+  transform: rotate(180deg)
+}
+.rotate190deg:hover {
+  transform: rotate(190deg)
+}
+.rotate200deg:hover {
+  transform: rotate(200deg)
+}
+.rotate210deg:hover {
+  transform: rotate(210deg)
+}
+.rotate220deg:hover {
+  transform: rotate(220deg)
+}
+.rotate230deg:hover {
+  transform: rotate(230deg)
+}
+.rotate240deg:hover {
+  transform: rotate(240deg)
+}
+.rotate250deg:hover {
+  transform: rotate(250deg)
+}
+.rotate260deg:hover {
+  transform: rotate(260deg)
+}
+.rotate270deg:hover {
+  transform: rotate(270deg)
+}
+.rotate280deg:hover {
+  transform: rotate(280deg)
+}
+.rotate290deg:hover {
+  transform: rotate(290deg)
+}
+.rotate300deg:hover {
+  transform: rotate(300deg)
+}
+.rotate310deg:hover {
+  transform: rotate(310deg)
+}
+.rotate320deg:hover {
+  transform: rotate(320deg)
+}
+.rotate330deg:hover {
+  transform: rotate(330deg)
+}
+.rotate340deg:hover {
+  transform: rotate(340deg)
+}
+.rotate350deg:hover {
+  transform: rotate(350deg)
+}
+.rotate360deg:hover {
+  transform: rotate(360deg)
+}

@@ -1,0 +1,49 @@
+
+.navbar {
+  width:100%;
+  height:50px;
+  margin:0;
+  padding:20px;
+  color:white;
+  font-family:"Lato",sans-serif;
+  font-size:30px;
+  position:fixed;
+  padding-left:0;
+}
+
+a:visited, a {
+color:white;
+text-decoration:none;
+      font-size: 36px;
+  border-radius: 0;
+  background-color: transparent;
+  border: 0;
+  box-shadox: 2px 2px transparent;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+body {
+  margin:0;
+}
+.card {
+  width:332px;
+  height:212px;
+  background:#a1a1a1;
+  border-radius: 20px;
+  cursor:pointer;
+  padding-left:20px;
+  font-family:"Lato",sans-serif;
+  font-size:17px;
+}
+.image {
+    width:112px;
+  height:112px;
+  background:#a1a1a1;
+  cursor:pointer;
+}
+
+::selection {
+  color:black !important;
+  background:darkgray !important;
+}
