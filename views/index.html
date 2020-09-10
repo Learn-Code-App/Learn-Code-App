@@ -151,6 +151,20 @@ opacity:1;
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
     />
 
+    <style>
+      @media only screen and (max-width: 1000px) {
+        button {
+          display:none !important;
+        }
+        img {
+          display:none !important;
+        }
+        #aThing {
+          display:block !important; 
+        }
+      }
+    </style>
+    
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
 
@@ -181,8 +195,12 @@ if('serviceWorker' in navigator){
     background="https://cdn.glitch.com/dc89eddf-9d30-41de-968a-aade27886f85%2FScreenshot%202019-08-27%20at%204.47.03%20PM.png?v=1566942470682"
   >
     <center>
+      <h1 style="display:none;padding:10px;background:black;border-radius:15px;width:350px;height:1.1em;cursor:pointer;" class="animate__animated animate__flip" id="aThing" onclick="window.location =  '/sitemap.html'">
+      Sitemap
+        <br><br><br>
+    </h1>
       <h1 style="padding:10px;background:black;border-radius:15px;width:350px;display:block;" class="animate__animated animate__flip" id="thing5">
-      MOTD: Have a great day!
+      MOTD: Learn some Code!
     </h1>
     <h6 style="font-size:56px;padding:10px;background:black;border-radius:15px;width:600px;" id="thing6" class="animate__animated animate__tada">
       Welcome to Learn-Code
