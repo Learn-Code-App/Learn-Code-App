@@ -1,418 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css"
-  />
-    <link rel="manifest" href="/manifest.json">
-    <script async src="https://arc.io/widget.js#UniE98jJ"></script>
-    <meta name="Description" content="Make the perfect static site or see the best guide">
-    <link
-      rel="shortcut icon"
-      href="https://cdn.glitch.com/4c4c9565-af97-4b79-900b-dfb0463306bf%2Flogo.png?v=1589916571135"
+    <link rel="manifest" href="/manifest.json" />
+    <meta
+      name="Description"
+      content="Make the perfect static site or see the best guide"
     />
-    <meta name="title" content="Home">
+    <link rel="shortcut icon" href="/logo.webp" />
+    <meta name="title" content="Home" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
       rel="stylesheet"
+      defer
     />
     <style>
+      /* CSS files add styling rules to your content */
+      h6 {
+        font-size: 56px;
+      }
 
-/* CSS files add styling rules to your content */
-h6 {
-  font-size:56px;
-}
+      body {
+        text-align: center;
+        font-family: "Lato", sans-serif;
+        cursor: auto;
+        font-family: "Benton Sans", "Helvetica Neue", helvetica, arial,
+          sans-serif;
+        margin: 2em;
+        padding-left: 2em;
+        padding-right: 2em;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      button {
+        font-family: "Lato", sans-serif;
+      }
 
-body {
-  text-align:center;
-  font-family: 'Lato', sans-serif;
-  cursor: auto;
-  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 2em;
-  padding-left:2em;
-  padding-right:2em;
-    background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-button {
-  font-family: 'Lato', sans-serif;
-}
+      h1 {
+        font-family: "Lato", sans-serif;
+        color: #ffffff;
+      }
+      body {
+        font-weight:10;
+        font-family:"Lato",sans-serif;
+      }
 
-h1 {
-  font-family: 'Lato', sans-serif;
-  color: #ffffff;
-}
-h2 {
-  font-family: 'Lato', sans-serif;
-  color: #ffffff;
-}
-h3 {
-  
-  color: #ffffff;
-}
-h4 {
-  
-  color: #ffffff;
-}
-h5 {
-  
-  color: #ffffff;
-}
-h6 {
-  font-family: 'Lato', sans-serif;
-font-weight:10;
-  color: #ffffff;
-}
-a {
-  font-family: 'Lato', sans-serif;
-font-weight:10;
-  color: #ffffff;
-}
-p {
-    font-family: 'Lato', sans-serif;
-font-weight:10;
-  color: #ffffff;
-}
-label { 
-  font-family: 'Lato', sans-serif;
-  color: #ffffff;
-}
-#gradient, #gradient2, #gradient3, #gradient4, #gradient5, #gradient6, #gradient7, #gradient8, #gradient9 {
-  background: -webkit-linear-gradient(225deg, #36ffff , #3907de 90%);
-  -webkit-background-clip: text;
-      text-shadow:none;
-  font-weight:10;
-  -webkit-text-fill-color: transparent;
-}
-.button {
-  font-size: 16px;
-  border-radius: 3px;
-  background-color: lightgrey;
-  border: 1px solid grey;
-  box-shadow: 2px 2px teal;
-  cursor: pointer;
-}
-a {
-}
-p  {
-  color: white;
-}
+      @media only screen and (max-width: 1000px) {
+        #txt {
+          display: none;
+        }
+        .txt {
+          display: none;
+        }
+        .example {
+          height: 100px;
+        }
+        #example {
+          height: 100px;
+        }
+        div {
+          height: 700px;
+        }
+      }
+      body {
+        animation: appear;
+        animation-duration: 3s;
+      }
 
-@media only screen and (max-width: 1000px) {
-  #txt {
-    display:none;
-  }
-  .txt {
-    display:none;
-  }
-  .example {height:100px;}
-  #example {
-    height:100px;
-  }
-  div {
-    height:700px;
-  }
-}
-
-div {
-  height:420px;
-}
-
-body {
-  animation:appear;
-  animation-duration:3s;
-}
-
-@keyframes appear {
-  0% {
-    opacity:0;
-  }
-  100% {
-opacity:1;
-  }
-}
-
-#good-prop {
-  border:0;
-}
-
-.box2d {
-  position:absolute;
-}</style>
+      @keyframes appear {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
     <title>Learn-Code</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
-    />
 
     <style>
       @media only screen and (max-width: 1000px) {
         button {
-          display:none !important;
+          display: none !important;
         }
         img {
-          display:none !important;
+          display: none !important;
         }
         #aThing {
-          display:block !important; 
+          display: block !important;
+        }
+        #thing6 {
+          display: none;
         }
       }
     </style>
-    
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
 
     <style></style>
     <script>
-if('serviceWorker' in navigator){
-  navigator.serviceWorker.register('sw.js')
-    .then(reg => console.log('service worker registered'))
-    .catch(err => console.log('service worker not registered', err));
-}
-</script>
-    <script type="text/javascript">
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="https://learn-code.matomo.cloud/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '1']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.src='//cdn.matomo.cloud/learn-code.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-    <link rel="manifest" href="/manifest.json">
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("sw.js")
+          .then(reg => console.log("service worker registered"))
+          .catch(err => console.log("service worker not registered", err));
+      }
+    </script>
+       <script async src="https://arc.io/widget.js#UniE98jJ" defer></script>
+    <script src="/offline.js" ></script>
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css"
+      defer
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <link
+      href="/offline.css"
+      rel="stylesheet"
+    />
   </head>
-  <body
-    background="https://cdn.glitch.com/dc89eddf-9d30-41de-968a-aade27886f85%2FScreenshot%202019-08-27%20at%204.47.03%20PM.png?v=1566942470682"
-  >
-    <center>
-      <h1 style="display:none;padding:10px;background:black;border-radius:15px;width:350px;height:1.1em;cursor:pointer;" class="animate__animated animate__flip" id="aThing" onclick="window.location =  '/sitemap.html'">
-      Sitemap
-        <br><br><br>
-    </h1>
-      <h1 style="padding:10px;background:black;border-radius:15px;width:350px;display:block;" class="animate__animated animate__flip" id="thing5">
-      MOTD: Learn some Code!
-    </h1>
-    <h6 style="font-size:56px;padding:10px;background:black;border-radius:15px;width:600px;" id="thing6" class="animate__animated animate__tada">
-      Welcome to Learn-Code
-    </h6>
-    <br />
-    <h2 style="display:inline; color:transparent;">------</h2>
-    <button
-      onclick="window.location = '/edit.html'"
-      style=" display:inline;  cursor:pointer;  font-size: 16px;
-  border-radius: 3px;
-  background-color: lightgrey;
-  border: 1px solid grey;
-  box-shadow: 2px 2px teal;
-  cursor: pointer;"
-      class="button"
-    >
-      Try out our editor
-    </button>
-    <h2 style="display:inline; color:transparent;">----</h2>
-    <button
-      onclick="window.alert('Sorry, but this page has not been released yet.')"
-      style=" display:inline  cursor:pointer;  font-size: 16px;
-  border-radius: 3px;
-  background-color: lightgrey;
-  border: 1px solid grey;
-  box-shadow: 2px 2px teal;
-  cursor: pointer;"
-      class="button"
-    >
-      Start Learning
-    </button>
-    <h2 style="display:inline; color:transparent;">---</h2>
-    <button
-      onclick="window.location = '/home'"
-      style=" display:inline;  cursor:pointer;  font-size: 16px;
-  border-radius: 3px;
-  background-color: lightgrey;
-  border: 1px solid grey;
-  box-shadow: 2px 2px teal;
-  cursor: pointer;"
-      class="button"
-    >
-      Home
-    </button>
-    <h2 style="display:inline; color:transparent;">---</h2>
-    <button
-      onclick="window.location = '/changelog'"
-      style=" display:inline;  cursor:pointer;  font-size: 16px;
-  border-radius: 3px;
-  background-color: lightgrey;
-  border: 1px solid grey;
-  box-shadow: 2px 2px teal;
-  cursor: pointer;"
-      class="button"
-    >
-      Changelog
-    </button>
-          <h2 style="display:inline; color:transparent;">---</h2>
-    <button
-      onclick="window.location = '/donate'"
-      style=" display:inline;  cursor:pointer;  font-size: 16px;
-  border-radius: 3px;
-  background-color: lightgrey;
-  border: 1px solid grey;
-  box-shadow: 2px 2px teal;
-  cursor: pointer;"
-      class="button"
-    >
-      Donate
-    </button>
-    <br />
-      <h2 style="display:inline; color:transparent;">-------------</h2>
-    <img
-      style=" "
-      src="https://cdn.glitch.com/4c4c9565-af97-4b79-900b-dfb0463306bf%2FImported%20piskel.gif?v=1585597543101"
-    />
-    <h2 style="display:inline; color:transparent;">------</h2>
-    <img
-      style=" "
-      src="https://cdn.glitch.com/4c4c9565-af97-4b79-900b-dfb0463306bf%2FImported%20piskel.gif?v=1585597543101"
-    /><h2 style="display:inline; color:transparent;">-</h2>
-    <img
-      style=" "
-      src="https://cdn.glitch.com/4c4c9565-af97-4b79-900b-dfb0463306bf%2FImported%20piskel.gif?v=1585597543101"
-    />
-    <h2 style="display:inline; color:transparent;"></h2>
-    <img
-      style=" "
-      src="https://cdn.glitch.com/4c4c9565-af97-4b79-900b-dfb0463306bf%2FImported%20piskel.gif?v=1585597543101"
-    />
-          <h2 style="display:inline; color:transparent;"></h2>
-    <img
-      style=" "
-      src="https://cdn.glitch.com/4c4c9565-af97-4b79-900b-dfb0463306bf%2FImported%20piskel.gif?v=1585597543101"
-    />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <center>
-      <div
-        style="background:black; width:100%; position:absolute; left:0px; top: 650px;height:300px;"
-      >
-        <br /><br /><br /><br />
-        <h1 style="display:inline;font-weight:10;">
-          Take your code to the
-        </h1>
-        <h1 style="display:inline;  background: -webkit-linear-gradient(225deg, #36ffff , #3907de 90%);
-  -webkit-background-clip: text;
-      text-shadow:none;
-  font-weight:10;
-  -webkit-text-fill-color: transparent;" id="gradient2" >
-          next level
-        </h1>
-        <h1 style="display:inline;font-weight:10;">
-          plus review our
-        </h1>
-        <h1 style="display:inline;  background: -webkit-linear-gradient(225deg, #36ffff , #3907de 90%);
-  -webkit-background-clip: text;
-      text-shadow:none;
-  font-weight:10;
-  -webkit-text-fill-color: transparent;" id="gradient3">helpful guide</h1>
-        <h1 style="display:inline;font-weight:10;">
-          , and examples created for you to view at your fingertips.
-        </h1>
-      </div>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      <h6 style="display:inline;font-weight:10;font-size:56px;transform:rotate(10deg);" id="thing3">It's Learning made</h6>
-      <h6 style="display:inline;transform:rotate(10deg); background: -webkit-linear-gradient(225deg, #36ffff , #3907de 90%);
-  -webkit-background-clip: text;
-      text-shadow:none;
-  font-weight:10;
-  -webkit-text-fill-color: transparent;font-size:56px;" id="gradient4">
-        better
-      </h6>
-      <br /><br /><br /><br /><br /><br /><br />
-    </center>
+  <body background="/bg.webp">
     <div
-      style="width:70%; background:gray; height:240px; position:absolute; left:15%; border-radius: 30px; padding:20px;"
-      id="example"
+      style="position:fixed;bottom:0px;z-index:10000;background:#474747;height:5px;width:100%;margin:0px;left:0px;"
     >
-      <h1
-        style=" top:20px; left:50px; width:90%; font-size:24px;height:30px;font-family: 'Lato'; color:black;"
-        id="txt"
-      >
-        The following code makes a hyperlink, (a link which leads to another
-        website if you add href="x", x being url you want.) which leads to the
-        home page of the learn-code app.
-      </h1>
-      <br /><br /><br /><br />
-      <textarea
-        style=" top:145px; left:50px; width:90%; font-size:24px;height:30px;"
-        readonly
-      >
-&lt;a href="https://learn-code.glitch.me/"&gt;Click me! I am a hyperlink!&lt;/a&gt;</textarea
-      >
-      <br /><br />
-      <button
-        id="btn"
-        onclick="window.location = 'https://learn-code.glitch.me/edit.html?html=<a href=&quot;https://learn-code.glitch.me/&quot;>Click me! I am a hyperlink!</a>&css=&js='"
-        style="width:300px; font-family: 'Lato', sans-serif; background:green; height:50px; border:none; color:white; font-size:36px; cursor:pointer;  left:50px; top:210px; border-radius:10px;"
-      >
-        Try it in the editor
-      </button>
+      <div
+        style="position:fixed;bottom:0px;background:black;z-index:10000000;width:0%;height:5px;margin:0px;left:0px;"
+        id="Bar"
+      ></div>
     </div>
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <center>
-      <div style="padding:20px;background:transparent;transform:rotate(2deg);height:80px;">
-      <h6 style="display:inline;font-weight:10; font-size:56px; background: -webkit-linear-gradient(225deg, #36ffff , #3907de 90%);
-  -webkit-background-clip: text;
-      text-shadow:none;
-  font-weight:10;
-      -webkit-text-fill-color: transparent;" id="thing2">Yeah. Examples made just like that.</h6></div>
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-            <h6 style="display:inline;  background: -webkit-linear-gradient(225deg, #36ffff , #3907de 90%);
-  -webkit-background-clip: text;
-      text-shadow:none;
-  font-weight:10;
-  -webkit-text-fill-color: transparent;font-size:56px;" id="gradient7">
-        The best part about Learn Code?
+      <br /><br />
+      <h1
+        style="display:none;padding:10px;background:black;border-radius:15px;width:350px;height:1.1em;cursor:pointer;color:white;"
+        class="animate__animated animate__flip"
+        id="aThing"
+        onclick="window.location =  '/sitemap.html'"
+      >
+        Sitemap
+      </h1>
+      <h6
+        style="font-size:56px;padding:10px;background:black;border-radius:15px;width:600px;color:white;"
+        id="thing6"
+        class="animate__animated animate__tada"
+      >
+        Welcome to Learn-Code
       </h6>
-      <br><br><br>
-            <h6 style="display:inline;font-size:36;font-size:56px;" id="thing1">
-        Yes, we are <h6 style="display:inline;font-size:36; font-size:56px; background: -webkit-linear-gradient(225deg, #36ffff , #3907de 90%);
-  -webkit-background-clip: text;
-      text-shadow:none;
-  font-weight:10;
-  -webkit-text-fill-color: transparent;" id="gradient8">
-        open-source.
-      </h6>
-      </h6>
-      <br><br><br>
-      <a id="gradient9" href="https://glitch.com/edit/#!/remix/open-new-learn-code" style="font-size:56px;font-size:20px;text-decoration: underline;  background: -webkit-linear-gradient(225deg, #36ffff , #3907de 90%);
-  -webkit-background-clip: text;
-      text-shadow:none;
-  font-weight:10;
-  -webkit-text-fill-color: transparent;">Get a copy of the editor to remix, FREE! (on Glitch)</a>
-      <br /><br /><br /><br /><br /><br /><br /><br><br><br><br><br><br><h1>
-      Of course, <a id="gradient10" style="font-size:56px;font-size:20px;text-decoration: underline;  background: -webkit-linear-gradient(225deg, #36ffff , #3907de 90%);
-  -webkit-background-clip: text; display:inline;
-      text-shadow:none;
-  font-weight:10;
-  -webkit-text-fill-color: transparent;font-size:1em;text-decoration:underline;" href="/donate">donations are greatly appreciated.</a>
-      </h1><br /><br /><br /><br /><br /><br /><br /><br><br><br><br><br>
-      <h6 style="display:inline;  background: -webkit-linear-gradient(225deg, #36ffff , #3907de 90%);
-  -webkit-background-clip: text;
-      text-shadow:none;
-  font-weight:10;
-  -webkit-text-fill-color: transparent;font-size:56px;" id="gradient6">
-        So, what are you waiting for?
-      </h6>
-      <br /><br /><br /><br /><br />
+      <h2 style="display:inline; color:transparent;">------</h2>
       <button
-        onclick="window.location = '/editor.html'"
-        style="display:inline;  cursor:pointer;  font-size: 16px;
+        onclick="window.location = '/edit.html'"
+        style=" display:inline;  cursor:pointer;  font-size: 16px;
   border-radius: 3px;
   background-color: lightgrey;
   border: 1px solid grey;
@@ -422,10 +160,10 @@ if('serviceWorker' in navigator){
       >
         Try out our editor
       </button>
-      <h2 style="display:inline; color:transparent;">-----</h2>
+      <h2 style="display:inline; color:transparent;">----</h2>
       <button
         onclick="window.alert('Sorry, but this page has not been released yet.')"
-        style="display:inline  cursor:pointer;  font-size: 16px;
+        style=" display:inline  cursor:pointer;  font-size: 16px;
   border-radius: 3px;
   background-color: lightgrey;
   border: 1px solid grey;
@@ -434,10 +172,11 @@ if('serviceWorker' in navigator){
         class="button"
       >
         Start Learning
-      </button><h2 style="display:inline; color:transparent;">-----</h2>
+      </button>
+      <h2 style="display:inline; color:transparent;">---</h2>
       <button
         onclick="window.location = '/home'"
-        style="display:inline  cursor:pointer;  font-size: 16px;
+        style=" display:inline;  cursor:pointer;  font-size: 16px;
   border-radius: 3px;
   background-color: lightgrey;
   border: 1px solid grey;
@@ -446,10 +185,11 @@ if('serviceWorker' in navigator){
         class="button"
       >
         Home
-      </button><h2 style="display:inline; color:transparent;">-----</h2>
+      </button>
+      <h2 style="display:inline; color:transparent;">---</h2>
       <button
         onclick="window.location = '/changelog'"
-        style="display:inline  cursor:pointer;  font-size: 16px;
+        style=" display:inline;  cursor:pointer;  font-size: 16px;
   border-radius: 3px;
   background-color: lightgrey;
   border: 1px solid grey;
@@ -458,10 +198,11 @@ if('serviceWorker' in navigator){
         class="button"
       >
         Changelog
-      </button><h2 style="display:inline; color:transparent;">-----</h2>
+      </button>
+      <h2 style="display:inline; color:transparent;">---</h2>
       <button
         onclick="window.location = '/donate'"
-        style="display:inline  cursor:pointer;  font-size: 16px;
+        style=" display:inline;  cursor:pointer;  font-size: 16px;
   border-radius: 3px;
   background-color: lightgrey;
   border: 1px solid grey;
@@ -470,305 +211,317 @@ if('serviceWorker' in navigator){
         class="button"
       >
         Donate
-      </button><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <a rel="license" id="good-prop" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" style="box-shadow:none;background:black;color:white;"><img alt="Creative Commons License"  style="border-width:0px;display:block;" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br /><br><p>
-      This work is licensed under a </p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"  style="box-shadow:none;background:transparent;color:white;border:0;">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
-    <br><br><br>
-    </center>
-    <script src="instantclick.min.js" data-no-instant></script>
-<script data-no-instant>InstantClick.init();</script>
-      <script>
-            /* mousetrap v1.6.5 craig.is/killing/mice */
-(function(q, u, c) {
-    function v(a, b, g) {
-        a.addEventListener ? a.addEventListener(b, g, !1) : a.attachEvent("on" + b, g)
-    }
+      </button>
+      <br />
+      <h2 style="display:inline; color:transparent;">-------------</h2>
+      <img
+        style=" "
+        src="https://cdn.glitch.com/4c4c9565-af97-4b79-900b-dfb0463306bf%2FImported%20piskel.gif?v=1585597543101"
+      />
+      <h2 style="display:inline; color:transparent;">------</h2>
+      <img
+        style=" "
+        src="https://cdn.glitch.com/4c4c9565-af97-4b79-900b-dfb0463306bf%2FImported%20piskel.gif?v=1585597543101"
+      />
+      <h2 style="display:inline; color:transparent;">-</h2>
+      <img
+        style=" "
+        src="https://cdn.glitch.com/4c4c9565-af97-4b79-900b-dfb0463306bf%2FImported%20piskel.gif?v=1585597543101"
+      />
+      <h2 style="display:inline; color:transparent;"></h2>
+      <img
+        style=" "
+        src="https://cdn.glitch.com/4c4c9565-af97-4b79-900b-dfb0463306bf%2FImported%20piskel.gif?v=1585597543101"
+      />
+      <h2 style="display:inline; color:transparent;"></h2>
+      <img
+        style=" "
+        src="https://cdn.glitch.com/4c4c9565-af97-4b79-900b-dfb0463306bf%2FImported%20piskel.gif?v=1585597543101"
+      />
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <center>
+        <div
+          style="background:black; width:100%; position:absolute; left:0px; top: 900px;height:350px;"
+        >
+          <br /><br /><br /><br />
+          <h1 style="display:inline;font-weight:10;color:white;">
+            Take your code to the
+          </h1>
+          <h1
+            style="display:inline;  background: -webkit-linear-gradient(225deg, #36ffff , #3907de 90%);
+  -webkit-background-clip: text;
+      text-shadow:none;
+  font-weight:10;
+  -webkit-text-fill-color: transparent;"
+            id="gradient2"
+          >
+            next level
+          </h1>
+          <h1 style="display:inline;font-weight:10;color:white;">
+            plus review our
+          </h1>
+          <h1
+            style="display:inline;  background: -webkit-linear-gradient(225deg, #36ffff , #3907de 90%);
+  -webkit-background-clip: text;
+      text-shadow:none;
+  font-weight:10;
+  -webkit-text-fill-color: transparent;"
+            id="gradient3"
+          >
+            helpful guide
+          </h1>
+          <h1 style="display:inline;font-weight:10;color:white;">
+            , and examples created for you to view at your fingertips.
+          </h1>
+        </div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <h1
+          style="display:inline;font-weight:10;font-size:56px;transform:rotate(10deg);color:white;"
+          id="thing3"
+        >
+          It's Learning made
+        </h1>
+        <h1
+          style="display:inline;transform:rotate(10deg); background: -webkit-linear-gradient(225deg, #36ffff , #3907de 90%);
+  -webkit-background-clip: text;
+      text-shadow:none;
+  font-weight:10;
+  -webkit-text-fill-color: transparent;font-size:56px;"
+          id="gradient4"
+        >
+          better
+        </h1>
+        <br /><br /><br /><br /><br /><br /><br />
+      </center>
+      <div
+        style="width:70%; background:gray; height:240px; position:absolute; left:15%; border-radius: 30px; padding:20px;"
+        id="example"
+      >
+        <label
+          style=" top:20px; left:50px; width:90%; font-size:24px;height:30px;font-family: 'Lato'; color:black;"
+          for="textarea"
+          id="txt"
+        >
+          The following code makes a hyperlink, (a link which leads to another
+          website if you add href="x", x being url you want.) which leads to the
+          home page of the learn-code app.
 
-    function z(a) {
-        if ("keypress" == a.type) {
-            var b = String.fromCharCode(a.which);
-            a.shiftKey || (b = b.toLowerCase());
-            return b
-        }
-        return n[a.which] ? n[a.which] : r[a.which] ? r[a.which] : String.fromCharCode(a.which).toLowerCase()
-    }
-
-    function F(a) {
-        var b = [];
-        a.shiftKey && b.push("shift");
-        a.altKey && b.push("alt");
-        a.ctrlKey && b.push("ctrl");
-        a.metaKey && b.push("meta");
-        return b
-    }
-
-    function w(a) {
-        return "shift" == a || "ctrl" == a || "alt" == a ||
-            "meta" == a
-    }
-
-    function A(a, b) {
-        var g, d = [];
-        var e = a;
-        "+" === e ? e = ["+"] : (e = e.replace(/\+{2}/g, "+plus"), e = e.split("+"));
-        for (g = 0; g < e.length; ++g) {
-            var m = e[g];
-            B[m] && (m = B[m]);
-            b && "keypress" != b && C[m] && (m = C[m], d.push("shift"));
-            w(m) && d.push(m)
-        }
-        e = m;
-        g = b;
-        if (!g) {
-            if (!p) {
-                p = {};
-                for (var c in n) 95 < c && 112 > c || n.hasOwnProperty(c) && (p[n[c]] = c)
-            }
-            g = p[e] ? "keydown" : "keypress"
-        }
-        "keypress" == g && d.length && (g = "keydown");
-        return {
-            key: m,
-            modifiers: d,
-            action: g
-        }
-    }
-
-    function D(a, b) {
-        return null === a || a === u ? !1 : a === b ? !0 : D(a.parentNode, b)
-    }
-
-    function d(a) {
-        function b(a) {
-            a =
-                a || {};
-            var b = !1,
-                l;
-            for (l in p) a[l] ? b = !0 : p[l] = 0;
-            b || (x = !1)
-        }
-
-        function g(a, b, t, f, g, d) {
-            var l, E = [],
-                h = t.type;
-            if (!k._callbacks[a]) return [];
-            "keyup" == h && w(a) && (b = [a]);
-            for (l = 0; l < k._callbacks[a].length; ++l) {
-                var c = k._callbacks[a][l];
-                if ((f || !c.seq || p[c.seq] == c.level) && h == c.action) {
-                    var e;
-                    (e = "keypress" == h && !t.metaKey && !t.ctrlKey) || (e = c.modifiers, e = b.sort().join(",") === e.sort().join(","));
-                    e && (e = f && c.seq == f && c.level == d, (!f && c.combo == g || e) && k._callbacks[a].splice(l, 1), E.push(c))
-                }
-            }
-            return E
-        }
-
-        function c(a, b, c, f) {
-            k.stopCallback(b,
-                b.target || b.srcElement, c, f) || !1 !== a(b, c) || (b.preventDefault ? b.preventDefault() : b.returnValue = !1, b.stopPropagation ? b.stopPropagation() : b.cancelBubble = !0)
-        }
-
-        function e(a) {
-            "number" !== typeof a.which && (a.which = a.keyCode);
-            var b = z(a);
-            b && ("keyup" == a.type && y === b ? y = !1 : k.handleKey(b, F(a), a))
-        }
-
-        function m(a, g, t, f) {
-            function h(c) {
-                return function() {
-                    x = c;
-                    ++p[a];
-                    clearTimeout(q);
-                    q = setTimeout(b, 1E3)
-                }
-            }
-
-            function l(g) {
-                c(t, g, a);
-                "keyup" !== f && (y = z(g));
-                setTimeout(b, 10)
-            }
-            for (var d = p[a] = 0; d < g.length; ++d) {
-                var e = d + 1 === g.length ? l : h(f ||
-                    A(g[d + 1]).action);
-                n(g[d], e, f, a, d)
-            }
-        }
-
-        function n(a, b, c, f, d) {
-            k._directMap[a + ":" + c] = b;
-            a = a.replace(/\s+/g, " ");
-            var e = a.split(" ");
-            1 < e.length ? m(a, e, b, c) : (c = A(a, c), k._callbacks[c.key] = k._callbacks[c.key] || [], g(c.key, c.modifiers, {
-                type: c.action
-            }, f, a, d), k._callbacks[c.key][f ? "unshift" : "push"]({
-                callback: b,
-                modifiers: c.modifiers,
-                action: c.action,
-                seq: f,
-                level: d,
-                combo: a
-            }))
-        }
-        var k = this;
-        a = a || u;
-        if (!(k instanceof d)) return new d(a);
-        k.target = a;
-        k._callbacks = {};
-        k._directMap = {};
-        var p = {},
-            q, y = !1,
-            r = !1,
-            x = !1;
-        k._handleKey = function(a,
-            d, e) {
-            var f = g(a, d, e),
-                h;
-            d = {};
-            var k = 0,
-                l = !1;
-            for (h = 0; h < f.length; ++h) f[h].seq && (k = Math.max(k, f[h].level));
-            for (h = 0; h < f.length; ++h) f[h].seq ? f[h].level == k && (l = !0, d[f[h].seq] = 1, c(f[h].callback, e, f[h].combo, f[h].seq)) : l || c(f[h].callback, e, f[h].combo);
-            f = "keypress" == e.type && r;
-            e.type != x || w(a) || f || b(d);
-            r = l && "keydown" == e.type
-        };
-        k._bindMultiple = function(a, b, c) {
-            for (var d = 0; d < a.length; ++d) n(a[d], b, c)
-        };
-        v(a, "keypress", e);
-        v(a, "keydown", e);
-        v(a, "keyup", e)
-    }
-    if (q) {
-        var n = {
-                8: "backspace",
-                9: "tab",
-                13: "enter",
-                16: "shift",
-                17: "ctrl",
-                18: "alt",
-                20: "capslock",
-                27: "esc",
-                32: "space",
-                33: "pageup",
-                34: "pagedown",
-                35: "end",
-                36: "home",
-                37: "left",
-                38: "up",
-                39: "right",
-                40: "down",
-                45: "ins",
-                46: "del",
-                91: "meta",
-                93: "meta",
-                224: "meta"
-            },
-            r = {
-                106: "*",
-                107: "+",
-                109: "-",
-                110: ".",
-                111: "/",
-                186: ";",
-                187: "=",
-                188: ",",
-                189: "-",
-                190: ".",
-                191: "/",
-                192: "`",
-                219: "[",
-                220: "\\",
-                221: "]",
-                222: "'"
-            },
-            C = {
-                "~": "`",
-                "!": "1",
-                "@": "2",
-                "#": "3",
-                $: "4",
-                "%": "5",
-                "^": "6",
-                "&": "7",
-                "*": "8",
-                "(": "9",
-                ")": "0",
-                _: "-",
-                "+": "=",
-                ":": ";",
-                '"': "'",
-                "<": ",",
-                ">": ".",
-                "?": "/",
-                "|": "\\"
-            },
-            B = {
-                option: "alt",
-                command: "meta",
-                "return": "enter",
-                escape: "esc",
-                plus: "+",
-                mod: /Mac|iPod|iPhone|iPad/.test(navigator.platform) ? "meta" : "ctrl"
-            },
-            p;
-        for (c = 1; 20 > c; ++c) n[111 + c] = "f" + c;
-        for (c = 0; 9 >= c; ++c) n[c + 96] = c.toString();
-        d.prototype.bind = function(a, b, c) {
-            a = a instanceof Array ? a : [a];
-            this._bindMultiple.call(this, a, b, c);
-            return this
-        };
-        d.prototype.unbind = function(a, b) {
-            return this.bind.call(this, a, function() {}, b)
-        };
-        d.prototype.trigger = function(a, b) {
-            if (this._directMap[a + ":" + b]) this._directMap[a + ":" + b]({}, a);
-            return this
-        };
-        d.prototype.reset = function() {
-            this._callbacks = {};
-            this._directMap = {};
-            return this
-        };
-        d.prototype.stopCallback = function(a, b) {
-            if (-1 < (" " + b.className + " ").indexOf(" mousetrap ") || D(b, this.target)) return !1;
-            if ("composedPath" in a && "function" === typeof a.composedPath) {
-                var c = a.composedPath()[0];
-                c !== a.target && (b = c)
-            }
-            return "INPUT" == b.tagName || "SELECT" == b.tagName || "TEXTAREA" == b.tagName || b.isContentEditable
-        };
-        d.prototype.handleKey = function() {
-            return this._handleKey.apply(this, arguments)
-        };
-        d.addKeycodes = function(a) {
-            for (var b in a) a.hasOwnProperty(b) && (n[b] = a[b]);
-            p = null
-        };
-        d.init = function() {
-            var a = d(u),
-                b;
-            for (b in a) "_" !== b.charAt(0) && (d[b] = function(b) {
-                return function() {
-                    return a[b].apply(a, arguments)
-                }
-            }(b))
-        };
-        d.init();
-        q.Mousetrap = d;
-        "undefined" !== typeof module && module.exports && (module.exports = d);
-        "function" === typeof define && define.amd && define(function() {
-            return d
-        })
-    }
-})("undefined" !== typeof window ? window : null, "undefined" !== typeof window ? document : null);
-        
-Mousetrap.bind("alt+l", function () {document.querySelector('body').background = "https://cdn.glitch.com/4c4c9565-af97-4b79-900b-dfb0463306bf%2Fcce92101-9771-49d5-9327-920a931126fa.image.png?v=1599145665909"; document.getElementById('thing1').style.color = 'black';document.getElementById('thing2').style.color = 'black';document.getElementById('thing3').style.color = 'black';document.getElementById('thing4').style.color = 'black';document.getElementById('things5').style.color = 'black';document.getElementById('things6').style.color = 'black';});
+          <br /><br /><br /><br />
+          <textarea
+            style=" top:145px; left:50px; width:90%; font-size:24px;height:30px;color:black;"
+            id="textarea"
+            readonly
+          >
+&lt;a href="https://learn-code.glitch.me/"&gt;Click me! I am a hyperlink!&lt;/a&gt;</textarea
+          ></label
+        >
+        <br /><br />
+        <button
+          id="btn"
+          onclick="window.location = 'https://learn-code.glitch.me/edit.html?html=<a href=&quot;https://learn-code.glitch.me/&quot;>Click me! I am a hyperlink!</a>&css=&js='"
+          style="width:300px; font-family: 'Lato', sans-serif; background:green; height:50px; border:none; color:white; font-size:36px; cursor:pointer;  left:50px; top:210px; border-radius:10px;"
+        >
+          Try it in the editor
+        </button>
+      </div>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <center>
+        <div
+          style="padding:20px;background:transparent;transform:rotate(2deg);height:80px;"
+        >
+          <h6
+            style="display:inline;font-weight:10; font-size:56px; background: -webkit-linear-gradient(225deg, #36ffff , #3907de 90%);
+  -webkit-background-clip: text;
+      text-shadow:none;
+  font-weight:10;
+      -webkit-text-fill-color: transparent;"
+            id="thing2"
+          >
+            Yeah. Examples made just like that.
+          </h6>
+        </div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <h6
+          style="display:inline;  background: -webkit-linear-gradient(225deg, #36ffff , #3907de 90%);
+  -webkit-background-clip: text;
+      text-shadow:none;
+  font-weight:10;
+  -webkit-text-fill-color: transparent;font-size:56px;"
+          id="gradient7"
+        >
+          The best part about Learn Code?
+        </h6>
+        <br /><br /><br />
+        <h6 style="display:inline;font-size:36;font-size:56px;color:white;font-weight:10;" id="thing1">
+          Yes, we are
+          <h6
+            style="display:inline;font-size:36; font-size:56px; background: -webkit-linear-gradient(225deg, #36ffff , #3907de 90%);
+  -webkit-background-clip: text;
+      text-shadow:none;
+  font-weight:10;
+  -webkit-text-fill-color: transparent;"
+            id="gradient8"
+          >
+            open-source.
+          </h6>
+        </h6>
+        <br /><br /><br />
+        <a
+          id="gradient9"
+          href="https://glitch.com/edit/#!/remix/learn-code"
+          style="font-size:56px;font-size:20px;text-decoration: underline;  background: -webkit-linear-gradient(225deg, #36ffff , #3907de 90%);
+  -webkit-background-clip: text;
+      text-shadow:none;
+  font-weight:10;
+  -webkit-text-fill-color: transparent;"
+          title="Get a copy of the editor!"
+          >Get a copy of the editor on Glitch!</a
+        >
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <h1 style="color:white;font-weight:10;">
+          Of course,
+          <a
+            id="gradient10"
+            style="font-size:56px;font-size:20px;text-decoration: underline;  background: -webkit-linear-gradient(225deg, #36ffff , #3907de 90%);
+  -webkit-background-clip: text; display:inline;
+      text-shadow:none;
+  font-weight:10;
+  -webkit-text-fill-color: transparent;font-size:1em;text-decoration:underline;"
+            href="/donate"
+            title="Donate!"
+            >donations are welcome.</a
+          >
+        </h1>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <h1
+          style="display:inline;  background: -webkit-linear-gradient(225deg, #36ffff , #3907de 90%);
+  -webkit-background-clip: text;
+      text-shadow:none;
+  font-weight:10;
+  -webkit-text-fill-color: transparent;font-size:56px;"
+          id="gradient6"
+        >
+          So, what are you waiting for?
+        </h1>
+        <br /><br /><br /><br /><br />
+        <button
+          onclick="window.location = '/editor.html'"
+          style="display:inline;  cursor:pointer;  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;"
+          class="button"
+        >
+          Try out our editor
+        </button>
+        <h2 style="display:inline; color:transparent;">-----</h2>
+        <button
+          onclick="window.alert('Sorry, but this page has not been released yet.')"
+          style="display:inline  cursor:pointer;  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;"
+          class="button"
+        >
+          Start Learning
+        </button>
+        <h2 style="display:inline; color:transparent;">-----</h2>
+        <button
+          onclick="window.location = '/home'"
+          style="display:inline  cursor:pointer;  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;"
+          class="button"
+        >
+          Home
+        </button>
+        <h2 style="display:inline; color:transparent;">-----</h2>
+        <button
+          onclick="window.location = '/changelog'"
+          style="display:inline  cursor:pointer;  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;"
+          class="button"
+        >
+          Changelog
+        </button>
+        <h2 style="display:inline; color:transparent;">-----</h2>
+        <button
+          onclick="window.location = '/donate'"
+          style="display:inline  cursor:pointer;  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;"
+          class="button"
+        >
+          Donate</button
+        ><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <a
+          rel="license"
+          id="good-prop"
+          href="http://creativecommons.org/licenses/by-nc-nd/4.0/"
+          style="box-shadow:none;background:black;color:white;"
+          ><img
+            alt="License"
+            style="border-width:0px;display:block;"
+            src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png"/></a
+        ><br /><br />
+        <p style="color:white;">
+          This work is licensed under a
+        </p>
+        <a
+          rel="license"
+          href="http://creativecommons.org/licenses/by-nc-nd/4.0/"
+          style="box-shadow:none;background:transparent;color:white;border:0;"
+          >Creative Commons Attribution-NonCommercial-NoDerivatives 4.0
+          International License, so check that out for licensing info</a
+        >!<br /><br />
+        <p style="color:white;">
+          Please note that there are some open source scripts used here, feel
+          free to check them. Oh, did I mention you should totally go on and use
+          their software! A good one is
+          <a
+            href="https://craig.is/killing/mice"
+            style="box-shadow:none;background:transparent;color:white;border:0;"
+            >https://craig.is/killing/mice!</a
+          >
+        </p>
+        <br /><br /><br />
+      </center>
+      <script src="instantclick.min.js" data-no-instant></script>
+      <script data-no-instant>
+        InstantClick.init();
       </script>
     </center>
+    <script>
+      // remixed from w3schools ;)
+
+      window.onscroll = function() {
+        scrollBar();
+      };
+
+      function scrollBar() {
+        var winScroll =
+          document.body.scrollTop || document.documentElement.scrollTop;
+        var height =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("Bar").style.width = scrolled + "%";
+      }
+      window.scrollTo(0, 0);
+    </script>
   </body>
 </html>

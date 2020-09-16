@@ -3,7 +3,9 @@
     <script async src="https://arc.io/widget.js#UniE98jJ"></script>
         <script src="/formatting.js"></script>
     <!--- codemirror themes --->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.13.0/beautify.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.13.0/beautify-html.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.13.0/beautify-css.min.js"></script>
     <link rel="stylesheet" href="/codemirror.css" />
     <link rel="stylesheet" href="https://codemirror.net/theme/3024-day.css" />
     <link rel="stylesheet" href="https://codemirror.net/theme/3024-night.css" />
@@ -123,7 +125,7 @@
 
     <link
       rel="shortcut icon"
-      href="https://cdn.glitch.com/4c4c9565-af97-4b79-900b-dfb0463306bf%2Flogo.png?v=1589916571135"
+      href="/logo.webp"
     />
 
     <link
@@ -307,6 +309,7 @@
 </script>
   </head>
   <body style="overflow-x:auto;">
+     <iframe width="253px" height="203px" style="z-index:1000000;position:fixed;right:5px;bottom:5px;display:none;" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="yt-vid"></iframe>
     <div
       style="background:darkgrey; width:100%; position:absolute; z-index:10; display:none; height:100vh;"
       id="ImportFrame"
@@ -520,15 +523,18 @@
           <option value="text/x-sh">Shell (bash)</option>
           <option value="text/x-spreadsheet">Spreadsheet</option>
         </optgroup>
-      </select>
-      <br /><br />
+      </select><br><br><br><br><br><br>
+      <label class="checkbox-label">
+        <input type="checkbox" onclick="YouTube()" />
+        Youtube
+      </label><br /><br />
       <button
-        style="  width:325px; font-family: 'Lato', sans-serif; background:green; height:50px; border:none; color:white; font-size:36px;position:absolute;left:10%;bottom:70px;"
+        style="  width:325px; font-family: 'Lato', sans-serif; background:green; height:50px; border:none; color:white; font-size:36px;position:absolute;left:10%;bottom:0px;"
         onclick="alert('Please press Ctrl + /.')"
       >
         Comment
       </button>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br /><br />
       <button
         style="  width:325px; font-family: 'Lato', sans-serif; background:green; height:50px; border:none; color:white; font-size:36px; position:absolute; left:10%;"
         onclick="alert('Please press Ctrl + /.')"
@@ -608,35 +614,31 @@
         style="  width:325px; font-family: 'Lato', sans-serif; background:green; height:50px; border:none; color:white; font-size:36px; position:absolute; left:10%;"
       >
         Start Collaboration</button
-      ><br /><br /><br /><br /><br /><br /><br><br><br>
+      ><br /><br /><br /><br /><br /><br />
       <button
-        style="  width:100px; font-family: 'Lato', sans-serif; background:green; height:50px; border:none; color:white; font-size:36px; position:absolute; cursor:pointer; left:40%;top:635px;"
+        style="  width:100px; font-family: 'Lato', sans-serif; background:green; height:50px; border:none; color:white; font-size:36px; position:absolute; cursor:pointer; left:40%;top:785px;"
         onclick="document.getElementById('option-frame').style.display = 'none';"
       >
         Close</button
       ><br /><br /><br /><br />
     </div>
     </div>
-    <form id="code1">
       <textarea
         id="code"
         style="font-family: 'Lato', sans-serif;display:inline !important;"
       ></textarea>
-    </form>
-    <form id="code2">
+
       <textarea
         id="text2"
         style="font-family: 'Lato', sans-serif;display:inline !important;"
         value=""
       ></textarea>
-    </form>
-    <form id="code3">
+
       <textarea
         id="text3"
         style="font-family: 'Lato', sans-serif;display:inline !important;"
         value=""
       ></textarea>
-    </form>
 
     <div
          id="buttons"
@@ -703,6 +705,7 @@
       Import Image/Export
     </button>
   </div>
+    
     <script>
 window.onbeforeunload = function (e) {
     e = e || window.event;
@@ -915,7 +918,7 @@ CodeMirror.defineExtension("autoIndentRange", function (from, to) {
 
       function Save() {
         var string =
-          "https://learn-code.glitch.me/edit.html?html=" +
+          "https://learn-code.glitch.me/editor.html?html=" +
           editor.getValue() +
           "&css=" +
           editor3.getValue() +
@@ -1036,6 +1039,13 @@ CodeMirror.defineExtension("autoIndentRange", function (from, to) {
         }
       }
 
+      
+      function YouTube() {
+        var id = prompt("Please enter a YouTube ID. You can find it at the end of the v=. Example: 7Ys_yKGNFRQ URL: https://www.youtube.com/watch?v=7Ys_yKGNFRQ");
+        var vid = document.getElementById("yt-vid");
+        vid.src = "https://www.youtube.com/embed/" + id;
+        vid.style.display = "block";
+      }
       // end
 
       // functionality settings
@@ -1420,6 +1430,7 @@ CodeMirror.defineExtension("autoIndentRange", function (from, to) {
 })("undefined" !== typeof window ? window : null, "undefined" !== typeof window ? document : null);
         
 Mousetrap.bind("alt+g", function () {window.location = "/secret"});
+      Mousetrap.bind("alt+shift+f", function () {alert("hello there you found a secret that was supposed to be a formatter")});
     </script>
     <script src="https://codemirror.net/mode/apl/apl.js"></script>
     <script src="https://codemirror.net/mode/asn.1/asn.1.js"></script>
