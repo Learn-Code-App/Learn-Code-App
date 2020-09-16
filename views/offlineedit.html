@@ -123,7 +123,7 @@
 
     <link
       rel="shortcut icon"
-      href="https://cdn.glitch.com/4c4c9565-af97-4b79-900b-dfb0463306bf%2Flogo.png?v=1589916571135"
+      href="/logo.webp"
     />
 
     <link
@@ -340,17 +340,17 @@
       style=" position: fixed; background:darkgrey; width:200px; height:300px; padding:100px; z-index:10; overflow:hidden; overflow-y:scroll;  overflow-x:none; text-align:center; top:10%; align-items:center;"
       id="option-frame-part"
     >
-      <label class="checkbox-label">
-        <input type="checkbox" onclick="Jquery()" />
+      <label class="checkbox-label" for="option3">
+        <input type="checkbox" onclick="Jquery()" id="option3" />
         Use Jquery
       </label>
       <br /><br />
-      <label class="checkbox-label">
-        <input type="checkbox" onclick="Animate()" />
+      <label class="checkbox-label" for="option2">
+        <input type="checkbox" onclick="Animate()" id="option2" />
         Use Animate.css </label
       ><br /><br />
-      <label class="checkbox-label">
-        <input type="checkbox" onclick="VueJS()" />
+      <label class="checkbox-label" for="option1">
+        <input type="checkbox" onclick="VueJS()" id="option1" />
         Use Vue
       </label>
       <br />
@@ -407,26 +407,20 @@
       ><br /><br /><br /><br />
     </div>
     </div>
-    <form id="code1">
       <textarea
         id="code"
         style="font-family: 'Lato', sans-serif;display:inline !important;"
       ></textarea>
-    </form>
-    <form id="code2">
       <textarea
         id="text2"
         style="font-family: 'Lato', sans-serif;display:inline !important;"
         value=""
       ></textarea>
-    </form>
-    <form id="code3">
       <textarea
         id="text3"
         style="font-family: 'Lato', sans-serif;display:inline !important;"
         value=""
       ></textarea>
-    </form>
 
     <div
          id="buttons"

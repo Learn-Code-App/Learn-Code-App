@@ -25,6 +25,10 @@ app.get('/lua-docs', function(request, response) {
   response.sendFile(__dirname + '/lua/docs/index.html');
 });
 
+app.get('/lua-docs-readme', function(request, response) {
+  response.sendFile(__dirname + '/lua/docs/readme.html');
+});
+
 app.get('/offlineedit', function(request, response) {
   response.sendFile(__dirname + '/views/offlineedit.html');
 });
