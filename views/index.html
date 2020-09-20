@@ -83,7 +83,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <style>
-      @media only screen and (max-width: 1000px) {
+      @media only screen and (max-width: 1100px) {
         button {
           display: none !important;
         }
@@ -109,17 +109,16 @@
       }
     </script>
        <script async src="https://arc.io/widget.js#UniE98jJ" defer></script>
-    <script src="/offline.js" ></script>
+    <script src="/offline.min.js" defer></script>
         <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css"
-      defer
-    />
+      href="/animate.min.css"
+      defer/>
     <link rel="manifest" href="/manifest.json" />
     <link
-      href="/offline.css"
-      rel="stylesheet"
-    />
+      href="/offline.min.css"
+      rel="stylesheet" 
+          defer/>
   </head>
   <body background="/bg.webp">
     <div
@@ -147,7 +146,7 @@
       >
         Welcome to Learn-Code
       </h6>
-      <h2 style="display:inline; color:transparent;">------</h2>
+      <h2 style="display:inline; color:transparent;">---</h2>
       <button
         onclick="window.location = '/edit.html'"
         style=" display:inline;  cursor:pointer;  font-size: 16px;
@@ -155,23 +154,23 @@
   background-color: lightgrey;
   border: 1px solid grey;
   box-shadow: 2px 2px teal;
-  cursor: pointer;"
+  cursor: pointer;width:85px;"
         class="button"
       >
-        Try out our editor
+        Editor
       </button>
-      <h2 style="display:inline; color:transparent;">----</h2>
+      <h2 style="display:inline; color:transparent;">---</h2>
       <button
-        onclick="window.alert('Sorry, but this page has not been released yet.')"
+        onclick="window.location = '/html-docs'"
         style=" display:inline  cursor:pointer;  font-size: 16px;
   border-radius: 3px;
   background-color: lightgrey;
   border: 1px solid grey;
   box-shadow: 2px 2px teal;
-  cursor: pointer;"
+  cursor: pointer;width:85px;"
         class="button"
       >
-        Start Learning
+        Guide
       </button>
       <h2 style="display:inline; color:transparent;">---</h2>
       <button
@@ -181,7 +180,7 @@
   background-color: lightgrey;
   border: 1px solid grey;
   box-shadow: 2px 2px teal;
-  cursor: pointer;"
+  cursor: pointer;width:85px;"
         class="button"
       >
         Home
@@ -194,10 +193,11 @@
   background-color: lightgrey;
   border: 1px solid grey;
   box-shadow: 2px 2px teal;
-  cursor: pointer;"
+  cursor: pointer;
+               width:85px;"
         class="button"
       >
-        Changelog
+        Updates
       </button>
       <h2 style="display:inline; color:transparent;">---</h2>
       <button
@@ -207,33 +207,84 @@
   background-color: lightgrey;
   border: 1px solid grey;
   box-shadow: 2px 2px teal;
-  cursor: pointer;"
+  cursor: pointer;width:85px;"
         class="button"
       >
         Donate
       </button>
+      <h2 style="display:inline; color:transparent;">---</h2>
+      <button
+        onclick="window.location = 'https://discuss-learn-code.glitch.me#moremenu'"
+        style=" display:inline;  cursor:pointer;  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;width:85px;"
+        class="button"
+      >
+        Forum
+      </button>
+            <h2 style="display:inline; color:transparent;">---</h2>
+      <button
+        onclick="window.location = 'https://learn-code-wiki.glitch.me'"
+        style=" display:inline;  cursor:pointer;  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;width:85px;"
+        class="button"
+      >
+        Wiki
+      </button>
+      <h2 style="display:inline; color:transparent;">---</h2>
+      <button
+        onclick="window.location = 'http://learn-code-blog.glitch.me'"
+        style=" display:inline;  cursor:pointer;  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;width:85px;"
+        class="button"
+      >
+        Blog
+      </button>
       <br />
-      <h2 style="display:inline; color:transparent;">-------------</h2>
+      <h2 style="display:inline; color:transparent;margin-left:40px;"></h2>
       <img
         style=" "
         src="https://cdn.glitch.com/4c4c9565-af97-4b79-900b-dfb0463306bf%2FImported%20piskel.gif?v=1585597543101"
       />
-      <h2 style="display:inline; color:transparent;">------</h2>
+      <h2 style="display:inline; color:transparent;margin-right:10px;"></h2>
       <img
         style=" "
         src="https://cdn.glitch.com/4c4c9565-af97-4b79-900b-dfb0463306bf%2FImported%20piskel.gif?v=1585597543101"
       />
-      <h2 style="display:inline; color:transparent;">-</h2>
+      <h2 style="display:inline; color:transparent;margin-right:10px;"></h2>
       <img
         style=" "
         src="https://cdn.glitch.com/4c4c9565-af97-4b79-900b-dfb0463306bf%2FImported%20piskel.gif?v=1585597543101"
       />
-      <h2 style="display:inline; color:transparent;"></h2>
+      <h2 style="display:inline; color:transparent;margin-right:10px;"></h2>
       <img
         style=" "
         src="https://cdn.glitch.com/4c4c9565-af97-4b79-900b-dfb0463306bf%2FImported%20piskel.gif?v=1585597543101"
       />
-      <h2 style="display:inline; color:transparent;"></h2>
+      <h2 style="display:inline; color:transparent;margin-right:10px;"></h2>
+      <img
+        style=" "
+        src="https://cdn.glitch.com/4c4c9565-af97-4b79-900b-dfb0463306bf%2FImported%20piskel.gif?v=1585597543101"
+      /><h2 style="display:inline; color:transparent;margin-right:10px;"></h2>
+      <img
+        style=" "
+        src="https://cdn.glitch.com/4c4c9565-af97-4b79-900b-dfb0463306bf%2FImported%20piskel.gif?v=1585597543101"
+      /><h2 style="display:inline; color:transparent;margin-right:10px;"></h2>
+      <img
+        style=" "
+        src="https://cdn.glitch.com/4c4c9565-af97-4b79-900b-dfb0463306bf%2FImported%20piskel.gif?v=1585597543101"
+      /><h2 style="display:inline; color:transparent;margin-right:10px;"></h2>
       <img
         style=" "
         src="https://cdn.glitch.com/4c4c9565-af97-4b79-900b-dfb0463306bf%2FImported%20piskel.gif?v=1585597543101"
