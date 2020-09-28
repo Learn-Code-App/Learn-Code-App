@@ -1,5 +1,6 @@
 <html>
   <head>
+    <script>if (location.protocol != 'https:'){location.href = 'https:' + window.location.href.substring(window.location.protocol.length);}</script>
     <script async src="https://arc.io/widget.js#UniE98jJ"></script>
         <script src="/formatting.js"></script>
     <!--- codemirror themes --->
@@ -136,6 +137,9 @@
       src="https://kit.fontawesome.com/7265e63ffd.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="words.js"
+    ></script>
     <title id="title">Learn-Code | index.html</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
@@ -197,6 +201,7 @@
       rel="stylesheet"
       href="/show-hint.css"
     />
+    <script src="/db.js"></script>
     <script src="https://codemirror.net/mode/apl/apl.js"></script>
     <script src="https://codemirror.net/mode/asn.1/asn.1.js"></script>
     <script src="https://codemirror.net/mode/asterisk/asterisk.js"></script>
@@ -307,9 +312,21 @@
     g.type='text/javascript'; g.async=true; g.src='//cdn.matomo.cloud/learn-code.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
   })();
 </script>
+    <style>
+      @keyframes slideout {
+        100% {
+          left:-500px;
+        }
+      }
+      @keyframes slidein {
+        100% {
+          left:0px;
+        }
+      }
+    </style>
   </head>
   <body style="overflow-x:auto;">
-     <iframe width="253px" height="203px" style="z-index:1000000;position:fixed;right:5px;bottom:5px;display:none;" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="yt-vid"></iframe>
+     <iframe width="253px" height="183px" style="z-index:1000000;position:fixed;right:5px;bottom:5px;display:none;" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="yt-vid"></iframe>
     <div
       style="background:darkgrey; width:100%; position:absolute; z-index:10; display:none; height:100vh;"
       id="ImportFrame"
@@ -459,7 +476,7 @@
           <option value="xml">XML (HTML)</option><option value="text/javascript">Javascript</option>
           <option value="text/css">CSS</option><option value="text/apl">APL</option>
           <option value="text/x-ttcn-asn">ASN.1</option><option value="text/x-asterisk">Asterisk dialplan</option>
-          <option value="text/x-brainfuck">Brainf**k (Don't even try)</option><option value="text/x-csrc">C</option>
+          <option value="text/x-brainfuck">Brainf---</option><option value="text/x-csrc">C</option>
           <option value="text/x-c++src">C++</option><option value="text/x-java">Java</option>
           <option value="text/x-csharp">C#</option><option value="text/x-objectivec">Objective-C</option>
           <option value="text/x-scala">Scala</option><option value="text/x-vertex x-shader/x-fragment">Shader</option><option value="text/x-squirrel">Squirrel</option><option value="text/x-ceylon">Ceylon</option>
@@ -614,9 +631,12 @@
         style="  width:325px; font-family: 'Lato', sans-serif; background:green; height:50px; border:none; color:white; font-size:36px; position:absolute; left:10%;"
       >
         Start Collaboration</button
-      ><br /><br /><br /><br /><br /><br />
+      ><br /><br /><br /><br /><br /><br /><a
+      style="width:325px; text-decoration:none; font-family: 'Lato', sans-serif; background:green; height:50px; border:none; color:white; font-size:36px; position:absolute; cursor:pointer; left:10%; "
+      href="javascript:window.location='https://glitch.com/edit/#!/remix/learn-code-glitch?CODE=<html><head><style>'+editor3.getValue()+'</style></head><body>'+editor.getValue()+'<script>'+editor2.getValue()+'</script'+'></body></html>';">
+        Export to Glitch</a>
       <button
-        style="  width:100px; font-family: 'Lato', sans-serif; background:green; height:50px; border:none; color:white; font-size:36px; position:absolute; cursor:pointer; left:40%;top:785px;"
+        style="  width:100px; font-family: 'Lato', sans-serif; background:green; height:50px; border:none; color:white; font-size:36px; position:absolute; cursor:pointer; left:40%;top:805px;"
         onclick="document.getElementById('option-frame').style.display = 'none';"
       >
         Close</button
@@ -642,7 +662,7 @@
 
     <div
          id="buttons"
-      style="width:20%;height:100%;background: url('https://cdn.glitch.com/dc89eddf-9d30-41de-968a-aade27886f85%2FScreenshot%202019-08-27%20at%204.47.03%20PM.png?v=1566942470682');right:0px;top:0px;display:inline;position:fixed;overflow-x:auto;overflow-y:auto;"
+      style="width:20%;transition:1s;height:100%;background: url('https://cdn.glitch.com/dc89eddf-9d30-41de-968a-aade27886f85%2FScreenshot%202019-08-27%20at%204.47.03%20PM.png?v=1566942470682');right:0px;top:0px;display:inline;position:fixed;overflow-x:auto;overflow-y:auto;"
     >
     <button
             class="box2d"
@@ -692,7 +712,7 @@
             class="box2d"
       style="position:absolute;right:0px;top:350px;font-size:20px;padding-left:10px;width:200px;z-index:10;height:30px;border-radius:10px 0px 0px 10px;"
       id="seven"
-      onclick="document.getElementById('savingframe').style.display = 'none';document.getElementById('option-frame').style.display = 'block';alert('This is out of place so the could be mobile users ;)');document.getElementById('ImportFrame').style.display = 'none';"
+      onclick="document.getElementById('savingframe').style.display = 'none';document.getElementById('option-frame').style.display = 'block';document.getElementById('ImportFrame').style.display = 'none';"
     >
       Options
     </button>
@@ -704,24 +724,29 @@
     >
       Import Image/Export
     </button>
+      <button
+            class="box2d"
+      style="position:absolute;right:0px;top:450px;font-size:20px;padding-left:10px;width:200px;z-index:10;height:30px;border-radius:10px 0px 0px 10px;"
+      id="nine"
+      onclick="full()"
+    >
+      Fullscreen
+    </button>
   </div>
-    
     <script>
-window.onbeforeunload = function (e) {
-    e = e || window.event;
 
-    // For IE and Firefox prior to version 4
-    if (e) {
-        e.returnValue = 'Are you sure you want to leave?';
-    }
-
-    // For Safari
-    return 'Are you sure you want to leave?';
-};
-</script>
-    <script>
-      // EDITORS
-
+      function Copy() {
+      var edit = editor.getValue()
+      var edit2 = editor2.getValue()
+      var edit3 = editor3.getValue()
+      prompt("Here is your code; it is not automatically copied because of the fact that some people might accidentaly click on this.", "<html><head><style>"+edit3+"</style></head><body>"+edit1+"<script>"+edit2+"</script"+"></body></html>")
+      }
+      
+      function full() {
+        alert('Press the Escape key to exit Fullscreen Mode');editor.setSize('100%', '100%');editor2.setSize('100%', '100%');editor3.setSize('100%', '100%');
+        document.getElementById('buttons').style.display = 'none';
+      }
+      
       CodeMirror.defineExtension("autoFormatRange", function (from, to) {
     var cm = this;
     var outer = cm.getMode(), text = cm.getRange(from, to).split("\n");
@@ -900,6 +925,10 @@ CodeMirror.defineExtension("autoIndentRange", function (from, to) {
             ">"
         );
       }
+      
+      function Glitch() {
+        window.location="https://glitch.com/edit/#!/remix/learn-code-glitch?CODE=<html><head><style>"+editor3.getValue()+"</style></head><body>"+editor.getValue()+"<script>"+editor2.getValue()+"</script"+"></body></html>"
+      }
 
       const queryString = window.location.search;
       if (queryString == "") {
@@ -914,6 +943,20 @@ CodeMirror.defineExtension("autoIndentRange", function (from, to) {
         editor3.setValue(cssurl);
       }
 
+      // DATABASE SAVES
+      function dbSave() {
+        var words = getWords(); // these will be our words
+        var table = htmlDB.createTable(words);
+        table.code = htmlFile = "<html><head><style>" +
+            editor3.getValue() +
+            "</style></head>" +
+            editor.getValue() +
+            "<script>" +
+            editor2.getValue() +
+            "</script" +
+            "></html>";
+      }
+      
       // URL SAVES
 
       function Save() {
@@ -947,7 +990,6 @@ CodeMirror.defineExtension("autoIndentRange", function (from, to) {
           localStorage.setItem("JS", editor2.getValue()); // we do not need to check if it is null onload, because textarea only reads strings.
         }, 1000);
       }
-
       // packages - called from the options menu
       var jquery = 0;
       function Jquery() {
@@ -969,8 +1011,6 @@ CodeMirror.defineExtension("autoIndentRange", function (from, to) {
           editor.setValue(new_text);
         }
       }
-
-
       var animate = 0;
       function Animate() {
         var current_text = editor.getValue();
@@ -1047,9 +1087,7 @@ CodeMirror.defineExtension("autoIndentRange", function (from, to) {
         vid.style.display = "block";
       }
       // end
-
       // functionality settings
-
       function ChangeFontSize() {
         var drop = document.getElementById("drop");
         editor.getWrapperElement().style.fontSize = drop.value;
@@ -1060,7 +1098,6 @@ CodeMirror.defineExtension("autoIndentRange", function (from, to) {
         var drop = document.getElementById("drop2");
         editor.setOption("mode", drop.value);
       }
-      
       // themes
 
       var input = document.getElementById("select");
@@ -1428,9 +1465,11 @@ CodeMirror.defineExtension("autoIndentRange", function (from, to) {
         })
     }
 })("undefined" !== typeof window ? window : null, "undefined" !== typeof window ? document : null);
+      (function(a){var c={},d=a.prototype.stopCallback;a.prototype.stopCallback=function(e,b,a,f){return this.paused?!0:c[a]||c[f]?!1:d.call(this,e,b,a)};a.prototype.bindGlobal=function(a,b,d){this.bind(a,b,d);if(a instanceof Array)for(b=0;b<a.length;b++)c[a[b]]=!0;else c[a]=!0};a.init()})(Mousetrap);
         
 Mousetrap.bind("alt+g", function () {window.location = "/secret"});
       Mousetrap.bind("alt+shift+f", function () {alert("hello there you found a secret that was supposed to be a formatter")});
+      Mousetrap.bindGlobal("esc", function () {document.getElementById('buttons').style.display='block';editor.setSize("80%", "100%");editor2.setSize("80%", "100%");editor3.setSize("80%", "100%");});
     </script>
     <script src="https://codemirror.net/mode/apl/apl.js"></script>
     <script src="https://codemirror.net/mode/asn.1/asn.1.js"></script>
@@ -1495,5 +1534,16 @@ Mousetrap.bind("alt+g", function () {window.location = "/secret"});
     <script src="https://codemirror.net/mode/turtle/turtle.js"></script>
     <script src="https://codemirror.net/mode/z80/z80.js"></script>
     <script src="https://codemirror.net/mode/spreadsheet/spreadsheet.js"></script>
+            <script>
+window.onbeforeunload = function (e) {
+    e = e || window.event;
+    // For IE and Firefox prior to version 4
+    if (e) {
+        e.returnValue = 'Are you sure you want to leave?';
+    }
+    // For Safari
+    return 'Are you sure you want to leave?';
+};
+</script>
   </body>
 </html>
