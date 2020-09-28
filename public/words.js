@@ -1,0 +1,150 @@
+var words = [
+  "procedure",
+  "association",
+  "night",
+  "guest",
+  "knowledge",
+  "loss",
+  "education",
+  "gate",
+  "entertainment",
+  "impression",
+  "student",
+  "emotion",
+  "fact",
+  "marketing",
+  "teacher",
+  "news",
+  "method",
+  "insect",
+  "cabinet",
+  "art",
+  "negotiation",
+  "complaint",
+  "difficulty",
+  "birthday"
+];
+var words2 = [
+  "awareness",
+  "association",
+  "coffee",
+  "currency",
+  "atmosphere",
+  "reality",
+  "disaster",
+  "theory",
+  "employee",
+  "event",
+  "cancer",
+  "hall",
+  "media",
+  "fortune",
+  "moment",
+  "procedure",
+  "virus",
+  "ink",
+  "need",
+  "mailbox",
+  "things",
+  "caption",
+  "reward",
+  "week",
+  "shirt",
+  "knee"
+];
+var words3 = [
+  "problem",
+  "inflation",
+  "politics",
+  "discussion",
+  "artisan",
+  "homework",
+  "fact",
+  "hospital",
+  "reputation",
+  "youth",
+  "teaching",
+  "studio",
+  "soup",
+  "apple",
+  "difference",
+  "food",
+  "refrigerator",
+  "artisan",
+  "contract",
+  "appearance",
+  "education",
+  "sample",
+  "knowledge",
+  "singer",
+  "fishing"
+];
+var words4 = [
+  "river",
+  "math",
+  "director",
+  "income",
+  "medicine",
+  "quality",
+  "passenger",
+  "suggestion",
+  "charity",
+  "employment",
+  "cheek",
+  "injury",
+  "church",
+  "difference",
+  "leader",
+  "feedback",
+  "hearing",
+  "police",
+  "newspaper",
+  "safety",
+  "poetry",
+  "president",
+  "fishing",
+  "excitement",
+  "bathroom"
+];
+var words5 = [
+  "channel",
+  "surprise",
+  "spy",
+  "apparel",
+  "bit",
+  "goose",
+  "group",
+  "dogs",
+  "wall",
+  "hands",
+  "rainstorm",
+  "chicken",
+  "market",
+  "fiction",
+  "button",
+  "snow",
+  "learning",
+  "attraction",
+  "fiction",
+  "self",
+  "flower",
+  "nail",
+  "experience",
+  "cherry",
+  "rat"
+];
+
+function getWords(amount) {
+  var result = [];
+  var randomWord = words[Math.floor(Math.random() * words.length)];
+  result.push(randomWord);
+  randomWord = words2[Math.floor(Math.random() * words.length)];
+  result.push(randomWord);
+  randomWord = words3[Math.floor(Math.random() * words.length)];
+  result.push(randomWord);
+  randomWord = words4[Math.floor(Math.random() * words.length)];
+  result.push(randomWord);
+  randomWord = words5[Math.floor(Math.random() * words.length)];
+  result.push(randomWord);
+  return result.join('-')
+}

@@ -4,7 +4,7 @@
     <link rel="manifest" href="/manifest.json" />
     <meta
       name="Description"
-      content="Make the perfect static site or see the best guide"
+      content="Code using the best editor, or read the perfect HTML guide."
     />
     <link rel="shortcut icon" href="/logo.webp" />
     <meta name="title" content="Home" />
@@ -13,6 +13,7 @@
       rel="stylesheet"
       defer
     />
+    <script>if (location.protocol != 'https:'){location.href = 'https:' + window.location.href.substring(window.location.protocol.length);}</script>
     <style>
       /* CSS files add styling rules to your content */
       h6 {
@@ -46,7 +47,7 @@
         font-family:"Lato",sans-serif;
       }
 
-      @media only screen and (max-width: 1000px) {
+      @media only screen and (max-width: 1300px) {
         #txt {
           display: none;
         }
@@ -61,6 +62,9 @@
         }
         div {
           height: 700px;
+        }
+        body {
+          overflow:hidden;
         }
       }
       body {
@@ -83,7 +87,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <style>
-      @media only screen and (max-width: 1100px) {
+      @media only screen and (max-width: 1300px) {
         button {
           display: none !important;
         }
@@ -144,7 +148,7 @@
         id="thing6"
         class="animate__animated animate__tada"
       >
-        Welcome to Learn-Code
+        Welcome to Learn-Code!
       </h6>
       <h2 style="display:inline; color:transparent;">---</h2>
       <button
@@ -214,7 +218,7 @@
       </button>
       <h2 style="display:inline; color:transparent;">---</h2>
       <button
-        onclick="window.location = 'https://discuss-learn-code.glitch.me#moremenu'"
+        onclick="alert('Coming Soon!')"
         style=" display:inline;  cursor:pointer;  font-size: 16px;
   border-radius: 3px;
   background-color: lightgrey;
@@ -250,6 +254,31 @@
         class="button"
       >
         Blog
+      </button>      <h2 style="display:inline; color:transparent;">---</h2>
+      <button
+        onclick="window.location = 'https://learn-code.statuspage.io/'"
+        style=" display:inline;  cursor:pointer;  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;width:85px;"
+        class="button"
+      >
+        Status
+      </button>
+            <h2 style="display:inline; color:transparent;">---</h2>
+      <button
+        onclick="window.location = '/status'"
+        style=" display:inline;  cursor:pointer;  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;width:85px;"
+        class="button"
+      >
+        Health
       </button>
       <br />
       <h2 style="display:inline; color:transparent;margin-left:40px;"></h2>
@@ -273,6 +302,14 @@
         src="https://cdn.glitch.com/4c4c9565-af97-4b79-900b-dfb0463306bf%2FImported%20piskel.gif?v=1585597543101"
       />
       <h2 style="display:inline; color:transparent;margin-right:10px;"></h2>
+      <img
+        style=" "
+        src="https://cdn.glitch.com/4c4c9565-af97-4b79-900b-dfb0463306bf%2FImported%20piskel.gif?v=1585597543101"
+      /><h2 style="display:inline; color:transparent;margin-right:10px;"></h2>
+      <img
+        style=" "
+        src="https://cdn.glitch.com/4c4c9565-af97-4b79-900b-dfb0463306bf%2FImported%20piskel.gif?v=1585597543101"
+      /><h2 style="display:inline; color:transparent;margin-right:10px;"></h2>
       <img
         style=" "
         src="https://cdn.glitch.com/4c4c9565-af97-4b79-900b-dfb0463306bf%2FImported%20piskel.gif?v=1585597543101"
@@ -427,12 +464,22 @@
   -webkit-text-fill-color: transparent;"
           title="Get a copy of the editor!"
           >Get a copy of the editor on Glitch!</a
+        ><br><br><a
+          id="gradient10"
+          href="https://github.com/code-alt/Learn-Code"
+          style="font-size:56px;font-size:20px;text-decoration: underline;  background: -webkit-linear-gradient(225deg, #36ffff , #3907de 90%);
+  -webkit-background-clip: text;
+      text-shadow:none;
+  font-weight:10;
+  -webkit-text-fill-color: transparent;"
+          title="Get a copy of the editor!"
+          >or, <br> Get a copy of Learn Code on Github!</a
         >
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         <h1 style="color:white;font-weight:10;">
           Of course,
           <a
-            id="gradient10"
+            id="gradient11"
             style="font-size:56px;font-size:20px;text-decoration: underline;  background: -webkit-linear-gradient(225deg, #36ffff , #3907de 90%);
   -webkit-background-clip: text; display:inline;
       text-shadow:none;
@@ -557,8 +604,7 @@
       </script>
     </center>
     <script>
-      // remixed from w3schools ;)
-
+      // used code from an open-source script - check it out
       window.onscroll = function() {
         scrollBar();
       };
@@ -572,7 +618,14 @@
         var scrolled = (winScroll / height) * 100;
         document.getElementById("Bar").style.width = scrolled + "%";
       }
+      
+      // except for this
+      
       window.scrollTo(0, 0);
+      
+      window.onload = function () {
+        scrollBar()
+      }
     </script>
   </body>
 </html>
