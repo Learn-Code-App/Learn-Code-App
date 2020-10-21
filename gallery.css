@@ -1,0 +1,29 @@
+.button {
+  background: #007BFF;
+  padding: 5px 20px 5px 20px;
+  font-family: 'Roboto', sans-serif;
+  border-width: 0px;
+  border-radius: 20px;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  outline: none;
+  font-weight: 100;
+  text-decoration: none;
+}
+.button:hover {
+  background: #0069D9;
+}
+.card {
+  font-family: 'Roboto', sans-serif;
+  padding: 30px;
+  border-radius: 20px;
+  border-color: grey;
+  border-width: 2px; 
+  border-style: outset;
+  width: 300px;
+  display: inline-block;
+  margin-bottom: 15px;
+  margin-right:15px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script async src="https://arc.io/widget.js#UniE98jJ"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" href="/logo.svg" sizes="any" type="image/svg+xml">
+    <title>Learn Code | Submit</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto"
+      rel="stylesheet"
+    />
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="bg" id="bg">
+      <div style="width:100%;height:100vh;background:white;position:fixed;">
+      
+    </div>
+      <img src="/spinner.png" style="position:fixed;" />
+    </div>
+    <center>
+<h1>
+  Here, you can send a request to us for your apps. 
+      </h1>
+         <div style="font-family: 'Roboto', sans-serif; width:500px;border-color:black;border-width:2px;border-style:solid;border-radius:20px;">
+        <form accept-charset="UTF-8" action="https://getform.io/f/b4eacaa5-4b0b-4f68-94df-8ac0de64e001" method="POST" enctype="multipart/form-data" id="ajaxForm"><br>
+          <label for="InputEmail" required="required">Email address&nbsp;</label>
+            <input type="email" name="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter your email"><br><br>
+            <label for="InputName">Name (not required)&nbsp;</label>
+            <input type="text" name="name" class="form-control" id="InputName" placeholder="Enter your name"><br><br>
+          <label for="InputAppName">App Name&nbsp;</label>
+            <input type="text" name="appname" class="form-control" id="InputAppName" placeholder="Enter your App name" required="required"><br><br>
+          <label for="InputAbout">About the app&nbsp;</label>
+            <input type="text" name="about" class="form-control" id="InputAbout" placeholder="What is it about?" required="required"><br><br>
+          <label for="other">Other info&nbsp;</label>
+            <input type="text" name="other" class="form-control" id="other" placeholder="Other info" required="required"><br><br>
+          <hr style="width:496px;"><br>
+            <label>Upload your file: (ZIP/tgz are required)</label><br>
+            <input type="file" name="file" style="font-family:'Roboto', sans-serif;text-align:center;" required>
+          <br><br><div id="s"><button type="submit" class="button-down">Submit</button><br><br></div>
+        </form>
+    </div>
+      <h3>
+        When you reqeust your app please wait 2-3 days and a support team will email you.
+      </h3>
+    </center>
+    <script>
+$("#ajaxForm").submit(function(e){
+  e.preventDefault();
+  document.getElementById("s").style.display = "none";
+  var action = $(this).attr("action");
+  $.ajax({
+    type: "POST",
+    url: action,
+    crossDomain: true,
+    data: new FormData(this),
+    dataType: "json",
+    contentType: "multipart/form-data",
+    processData: false,
+    contentType: false,
+    headers: {
+      "Accept": "application/json"
+    }
+  }).done(function(){
+    window.location='/thanks.html';
+  });
+});
+    </script>
+  </body>
+</html>
+
