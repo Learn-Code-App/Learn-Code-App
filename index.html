@@ -34,18 +34,21 @@
     </div>
       <img src="/spinner.png" style="position:fixed;" />
     </div>
-    <div class="news" id="news">
-      <h3>
-        News</h3>
+    <div class="news" id="news" style="display:flex;" ><div class="bg-news" style="opacity:0.8;"></div><div style="width:400px;height:300px;padding:20px;background:white;border-radius:20px;" class="body">
+      <div>
+        <p style="font-weight:bold;font-size:18px;">
+          News
+        </p>
       <hr style="width:60% !important;">
       <div id="next">
         <p id="text">
         Before I begin, thank you so much for joining Learn Code. There has been many changes to the front end and the back end.
       </p>
-      <br />
-      <button class="button-down" id="next-button" style="font-weight:300;">
+      <button class="button-down next" id="next-button" style="font-weight:300;border-radius:10px;width:100%;height:50px;">
         Next
       </button>
+        </div>
+      </div>
       </div>
     </div>
     <h1 style="font-size:11vh;font-weight:bold;width:300px;position:relative;left:25px;text-align:center;" class="txt">
@@ -56,7 +59,7 @@
       The place where you can code anything, or read the best guide!
     </h2>
     <br>
-    <button class="button-down" style="width:300px;font-weight:300;position:relative;left:25px;cursor:pointer;">
+    <button class="button-down" style="width:300px;font-weight:300;position:relative;left:25px;cursor:pointer;" onclick="window.location='/takeout'">
       Get the source code!
     </button><br><br>
     <button class="button-down-grey" style="width:300px;font-weight:300;position:relative;left:25px;cursor:pointer;" onclick="window.location='/sitemap.html';">
@@ -70,6 +73,7 @@
       <li>No ads, just Arc magic 💖</li>
       <li>Works offline (if you don't refresh, unlike others) 👌</li>
       <li>Blockly 😊</li>
+      <li>Formatting (Ctrl + Shift + F)</li>
       <li>Tutorials 😀</li>
       <li>Linting and autocomplete 🎯</li>
       <li>Infinite files 😎</li>
@@ -88,8 +92,8 @@
     </h3><h5 style="margin-left:20px;">
     Use it for apps, tests, games, and more!<br>We are a open-source software<br>dedicated to teaching people how to code.<br>See the <a href="/sitemap.html">sitemap here.</a>
     </h5><br><br><br>
-    <img src="/logo.svg" class="editor-image delete" style="border:0;border-radius:0;top:605px;cursor:auto;width:300px;height:300px;right:100px;">
+    <img src="/logo.svg" class="editor-image delete" style="border:0;border-radius:0;top:605px;cursor:auto;width:291px;height:280px;right:100px;">
     <img src="/drawings/editor.svg" class="editor-image delete" style="border:0;top:805px;cursor:auto;">
-    <img src="/editor.png" class="editor-image delete" onclick="window.location = '/editor.png'">
+    <img src="/editor.png" class="editor-image delete">
   </body>
 </html>
