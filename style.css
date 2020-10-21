@@ -1,0 +1,118 @@
+.news {
+  width:100%;
+  height:100vh;
+  padding:0;
+  margin:0;
+  text-align:center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background:white;
+  z-index:1000;
+  left:0;
+  top:0;
+  overflow:auto;
+}
+@media only screen and (max-width: 1200px) {
+  .delete {
+  display:none;
+  }
+
+  div {
+    text-align: center !important;
+  }
+  .txt {
+    font-size:25px !important;
+  }
+}
+html {
+  margin:0;
+}
+.bg {
+  height: 100vh;
+  width: 100%;
+  background: white;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition:1s;
+  z-index:1000000;
+  left:0;
+  top:0;
+}
+.other-bg {
+  opacity:1;
+  height: 100vh;
+  width: 100%;
+  background: white;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition:1s;
+  z-index:100;
+  left:0;
+  top:0;
+}
+h1, h2, h3, h4, h5, h6, p, ul {
+  font-family: 'Roboto', sans-serif;
+}
+.button-down {
+  background: #007BFF;
+  padding: 5px 20px 5px 20px;
+  font-family: 'Roboto', sans-serif;
+  border-width: 0px;
+  border-radius: 20px;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  outline: none;
+  font-weight: 160;
+  text-decoration: none;
+}
+.button-down-grey {
+  background: white;
+  padding: 5px 20px 5px 20px;
+  font-family: 'Roboto', sans-serif;
+  border-width: 2px;
+  border-color: darkgray;
+  border-radius: 20px;
+  border-style: outset;
+  color: black;
+  font-size: 25px;
+  cursor: pointer;
+  outline: none;
+  font-weight: 160;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.button-down-grey:hover {
+  border-style: inset;
+  background: #bababa;
+}
+.button-down:hover {
+  background: #0069D9;
+}
+.editor-image {
+  width:700px;
+  position:absolute;
+  right:20px;
+  border-width:3px;
+  border-style:solid;
+  border-color:black;
+  border-radius:10px;
+  top:150px;
+  cursor:pointer;
+}
+.link {
+  color:black;
+  font-weight:100;
+}

@@ -1,1 +1,0 @@
-sitemap: https://learn-code.glitch.me/sitemap.txt
